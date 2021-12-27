@@ -1,6 +1,5 @@
 import cv2
 
-
 def main():
     capture = cv2.VideoCapture('E:/<videos>/<videofile>.mp4')
     counter = 1
@@ -21,10 +20,8 @@ def main():
                 counter += 1
             except Exception as e:
                 print(str(e))
-
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-
 
 if __name__ == "__main__":
     main()
