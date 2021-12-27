@@ -13,6 +13,7 @@ def main():
     files = [f for f in listdir(source) if isfile(join(source, f))]
     random.shuffle(files)
 
+    # Putting 2000 to train, 200 to valid, 60 to test
     for idx, file in enumerate(files):
         new_file = str(idx).zfill(4) + '.jpg'
         if idx < 2000:
