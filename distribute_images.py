@@ -5,7 +5,7 @@ from os.path import isfile, join
 
 def main():
     who = '<Person name>'
-    source = 'E:/<path to images of person>/' + who
+    source = 'E:/<path to images of person>/'
     train = 'E:/faces/train/' + who
     valid = 'E:/faces/valid/' + who
     test = 'E:/faces/test/' + who
