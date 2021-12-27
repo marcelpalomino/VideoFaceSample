@@ -2,7 +2,7 @@ import cv2
 
 
 def main():
-    capture = cv2.VideoCapture('E:/videos/Sophia.mp4')
+    capture = cv2.VideoCapture('E:/<videos>/<videofile>.mp4')
     counter = 1
     while True:
         ret, frame = capture.read()
@@ -17,7 +17,7 @@ def main():
             cv2.imshow('frame', cv2.resize(frame, (300, 300)))
             try:
                 resized = cv2.resize(face, (32, 32), interpolation=cv2.INTER_AREA)
-                cv2.imwrite('E:/faces32/Laetitia/' + str(counter).zfill(6) + '.jpg', resized)
+                cv2.imwrite('E:/<output path>/' + str(counter).zfill(6) + '.jpg', resized)
                 counter += 1
             except Exception as e:
                 print(str(e))
