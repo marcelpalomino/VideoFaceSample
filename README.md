@@ -7,3 +7,5 @@ Simple Python scripts using OpenCV to detect faces in video frames and Tensorflo
 `distribute_images.py`: Shuffle and distribute images to directory structure later used by Keras' `flow_from_directory` method.
 
 `train_network.py`: Train simple neural network with the prepared image data.
+
+`use_network.py`: Check and use the network in a live video stream from webcam.
